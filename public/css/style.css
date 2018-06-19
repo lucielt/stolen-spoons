@@ -1,0 +1,99 @@
+:root {
+    --orange: #ff3c15;
+}
+body {
+    font-family: 'HKGrotesk-Medium', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #414141;
+
+    background-color: #ffffd5;
+
+}
+a {
+    text-decoration: none;
+    color: #414141;
+}
+h2 {
+    font-family: Asul;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 0 0 0.6em 0;
+}
+p {
+    margin: 1.6em 0;
+}
+
+header {
+    background-image: url('/Users/lucieletouze/Projets/SuperHi/split-screen/public/assets/images/about-3.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    height:100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+header img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+section {
+    display: flex;
+    flex-direction: row;
+}
+section div {
+    width: 50%;
+}
+section:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+section div.text{
+    padding: 60px;
+}
+section div.full-img{
+    height: 100vh;
+
+    background-image: url('/Users/lucieletouze/Projets/SuperHi/split-screen/public/assets/images/jordane-mathieu-539937-unsplash.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+section div.img-01{
+    background-image: url('/Users/lucieletouze/Projets/SuperHi/split-screen/public/assets/images/pratiksha-mohanty-430372-unsplash.jpg');
+
+}
+
+@media(max-width: 800px){
+    body{
+        font-style: 16px;
+    }
+    h2 {
+        font-style: 12px;
+    }
+    header {
+        height: 75vw;
+    }
+    section {
+        display: block;
+    }
+    section div {
+        width: 100%;
+    }
+    section div.text{
+        padding: 30px;
+    }
+    section div.full-img{
+        height: 100vw;
+    }
+}

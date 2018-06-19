@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'HK-Grotesk-Regular';
+  src: url('/Users/lucieletouze/Projets/SuperHi/good-times/public/assets/fonts/HKGrotesk-Regular.woff2') format('woff2'),
+       url('/Users/lucieletouze/Projets/SuperHi/good-times/public/assets/fonts/HKGrotesk-Regular.woff') format('woff'),
+       url('/Users/lucieletouze/Projets/SuperHi/good-times/public/assets/fonts/HKGrotesk-Regular.ttf') format('eot');
+       font-weight: normal;
+}
+
+@font-face {
+  font-family: 'HK-Grotesk-Medium';
+  src: url('/Users/lucieletouze/Projets/SuperHi/good-times/public/assets/fonts/HKGrotesk-Medium.woff2') format('woff2'),
+       url('/Users/lucieletouze/Projets/SuperHi/good-times/public/assets/fonts/HKGrotesk-Medium.woff') format('woff'),
+       url('/Users/lucieletouze/Projets/SuperHi/good-times/public/assets/fonts/HKGrotesk-Medium.ttf') format('eot');
+       font-weight: normal;
+}
+
+@font-face {
+  font-family: 'HK-Grotesk-Bold';
+  src: url('/Users/lucieletouze/Projets/SuperHi/good-times/public/assets/fonts/HKGrotesk-Bold.woff2') format('woff2'),
+       url('/Users/lucieletouze/Projets/SuperHi/good-times/public/assets/fonts/HKGrotesk-Bold.woff') format('woff'),
+       url('/Users/lucieletouze/Projets/SuperHi/good-times/public/assets/fonts/HKGrotesk-Bold.ttf') format('eot');
+       font-weight: normal;
+}
+
+.regular {
+    font-family: 'HK-Grotesk-Regular', sans-serif;
+}
+.medium {
+    font-family: 'HK-Grotesk-Medium', sans-serif;
+}
+.bold {
+    font-family: 'HK-Grotesk-Bold', sans-serif;
+}
+
+html,
+input {
+    -webkit-font-smoothing: antialiased;
+}

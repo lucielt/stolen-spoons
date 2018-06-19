@@ -1,0 +1,121 @@
+.register-image {
+    background-image: url('/Users/lucieletouze/Projets/SuperHi/good-times/public/assets/images/location.jpg');
+    background-position: center bottom;
+}
+.bg-orange {
+background-color: #ffe6dd;
+}
+input {
+    border: none;
+    line-height: 1.5;
+    font-size: 16px;
+    height: 48px;
+    width: 100%;
+    padding: 0 12px;
+    outline: none;
+    color: #32325b;
+}
+
+input::placeholder{
+    color: #aab7c4;
+}
+.register{
+    /* using grid to stack div on top of each other */
+    display: grid;
+    place-items: center;
+    /*hide overflow div on transform*/
+    overflow: hidden;
+}
+.front,
+.back {
+    grid-area: 1/1;
+}
+.front {
+    transition: transform 0.5s ease;
+}
+
+.front.slide-up{
+
+    transform: translateY(-100%);
+}
+
+/* -- BUTTONS -- */
+button {
+    cursor: pointer;
+    outline: none;
+}
+.button {
+    display: inline-block;
+    background-color: var(--orange);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: none;
+    padding: 24px 72px;
+    font-family: 'HK-Grotesk-Bold', sans-serif;
+    border-radius: 50px;
+}
+.button-small {
+    font-size: 14px;
+    padding: 12px 20px;
+}
+.button-outline {
+    background-color: transparent;
+    border: solid 2px var(--orange);
+    color: var(--orange);
+}
+
+.StripeElement {
+    background-color: #fff;
+    padding: 12px;
+}
+
+/* lock form when it's submitting*/
+.form-fields{
+    transition: opacity 0.5s ease;
+}
+
+.processing .form-fields{
+    opacity: 0.5;
+    pointer-events: none;
+}
+.spinner {
+    transition: opacity 0.5s ease;
+    opacity :0;
+  width: 40px;
+  height: 40px;
+  background-color: var(--orange);
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+  z-index:10;
+  box-shadow: 0 0 11px 0px rgb(254, 145, 127);
+}
+
+.processing .spinner {
+    opacity:1;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
